@@ -1,0 +1,483 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #a8bcbd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header img{
+    max-width: 150px;
+}
+
+@media (max-width: 700px){
+    .header img{
+        max-width: 90px;
+    }
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background: #063940;
+    height: 100%;
+}
+
+.header ul li a:hover{
+    color: #7fffd4;
+}
+
+.menu{
+    display: flex;
+}
+
+
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    font-size:2vh;
+}
+
+.perfil{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    text-align: left;
+}
+
+.perfil img{
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #063940;
+}
+
+
+@font-face {
+    font-family: sketch;
+    src: url(C:\Users\rober\OneDrive\Documentos\Guilherme\new-portfolio\Sketch);
+}
+
+.perfil h1{
+    font-size: 70px;
+    font-family: sketch;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.perfil h2{
+    font-size: 40px;
+    font-family: sketch;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media(max-width: 700px){
+    .menu li a{
+        font-size:1.5vh;
+    }
+
+    .perfil img{
+        width: 150px;
+        height: 130px;
+        border-radius: 50%;
+        border: 5px solid #063940;
+    }
+    .perfil h1{
+        font-size: 40px;
+    }
+
+    .perfil h2{
+        font-size: 30px;
+    }
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    width: 70%;
+    background-image: linear-gradient(90deg, #063940, transparent);
+}
+
+.inicio{
+    
+    padding: 100px;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: block;
+    background-color: #a8bcbd;
+}
+
+.inicio p{
+    padding: 100px;
+    border-radius: 5px;
+    border: 1px solid #063940;
+    font-size: larger;
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    .inicio{
+        padding: 20px;
+    }
+    .inicio p{
+        padding: 50px;
+        border-radius: 5px;
+        border: 1px solid #063940;
+        font-size: larger;
+        text-align: center;
+    }
+}
+
+footer{   
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #063940;
+    margin-top: auto;
+    width: 100%;
+}
+
+h3{
+    color: white;
+    font-size: 14px;
+}
+
+.rodape{
+    display:flex;
+    height: 80px;
+    align-items: center;
+}
+
+.rodape img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.rodape p{
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    h3{
+        font-size: 10px;
+    }
+    .rodape img{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.topo{
+    display: flex;
+    margin: 20px auto;
+    text-align: center;
+}
+.topo img{
+    margin: 0 auto;
+}
+
+/*img{
+    max-width: 100%;
+    display: block;
+}*/
+
+@media (max-width: 700px){
+    .topo img{
+        max-width: 90%;
+        display: block;
+        margin: 0px auto;
+    }
+}
+
+.titulos{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulos span{
+    color: #063940;
+}
+
+.grid1 img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 3px;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: 0px auto;
+    grid-gap: 50px;
+    padding: 30px;
+}
+
+.grid1-2{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #063940;
+}
+
+.grid1-2 span{
+    font-weight: bold;
+    color: #063940;
+}
+
+.grid1-2 a{
+    color: #063940;
+}
+
+.grid1-2 a:hover {
+    font-weight: bold;
+}
+
+.grid1-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5px auto;
+    grid-gap: 25px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #063940;
+    transition: 2s;
+}
+
+@media (max-width: 700px){
+ .grid1{
+     display: block;
+     max-width: 700px;
+ }
+ .grid1 img{
+    max-width: 100px;
+    max-height: 100px;
+ }
+ .grid1-2 p{
+    font-size: 16px;
+ }
+}
+
+.grid1-3 div:hover img{
+    max-width:100%;
+	height:100%;
+    z-index: 2;
+    transform: scale(4,3);
+   transition: 1s;
+   box-shadow: 5px 10px 8px #6b7879;
+}
+
+.sobre{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: block;
+    background-color: #a8bcbd;
+}
+
+.sobre p{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #063940;
+    text-align: center;
+}
+
+.cont{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 0 auto;
+    max-width: 1000px;   
+    text-align: left; 
+}
+
+.cont2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 0 auto;
+    max-width: 1000px;   
+    text-align: right; 
+    padding: 20px;
+}
+
+.cont2-item:nth-child(1){
+    grid-column: 2;
+    grid-row: 1 / 3;
+    border-radius: 5px;
+    border: 1px solid #063940;
+    padding: 15px;
+    text-align: center;
+}
+
+.cont2-item:nth-child(2) img{
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+}
+
+.cont2-item:nth-child(3) img{
+    max-width: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+}
+
+.cont-item:nth-child(1){
+    grid-row: 1 / 3;
+    border-radius: 5px;
+    border: 1px solid #063940;
+    padding: 15px;
+    text-align: center;
+}
+
+.cont-item:nth-child(2) img{
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+}
+
+.cont-item:nth-child(3) img{
+    max-width: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 700px){
+    .cont{
+        text-align: center;
+    }
+
+    .cont-item:nth-child(1){
+        grid-row: 1 / 1;
+        grid-column: 1 / 3;
+        max-width: 400px;
+    }
+    .cont img{
+       max-width: 80px;
+       max-height: 80px;
+    }
+    .cont2{
+        text-align: center;
+    }
+
+    .cont2-item:nth-child(1){
+        grid-row: 1 / 1;
+        grid-column: 1 / 3;
+        max-width: 400px;
+    }
+    .cont2 img{
+       max-width: 80px;
+       max-height: 80px;
+    }
+}
+
+form {
+    max-width: 40%;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0, 0.3);
+    margin: 100px auto;
+    padding: 20px;
+}
+
+input, textarea {
+    min-width: 280px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1px solid #c1c1c1;
+    margin-top: 20px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+textarea {
+    height: 200px;
+    padding-top: 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    height: 40px;
+    width: 70%;
+    max-width: 100px;
+    border: none;
+    border-radius: 3px;
+    background-color: #063940;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tkx {
+    width: 40%;
+    min-width: 360px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0, 0.3);
+    margin: 100px auto;
+    padding: 20px;
+    background-image: url(./img/Mensagem-de-agradecimento-profissional-1024x374.png);
+    background-size: cover;
+    font-size: clamp(0.2em, 1em + 0.2vw, 1.5em);
+
+}
+
+.tkx h1{
+    width: 40%;
+    min-width: 150px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: white;
+    background: linear-gradient(90deg, rgba(183,235,237,1) 0%, rgba(183,235,237,1) 58%, rgba(183,235,237,0.4066001400560224) 100%);
+    font-size: clamp(0.2em, 1em + 0.2vw, 1.5em);
+}
+
+.tkx p{
+    width: 70%;
+    min-width: 200px;
+    margin: 35px auto;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(183,235,237,1) 0%, rgba(183,235,237,1) 58%, rgba(183,235,237,0.4066001400560224) 100%);
+    border-radius: 5px;
+    font-size: clamp(0.2em, 1em + 0.2vw, 1.5em);
+}
