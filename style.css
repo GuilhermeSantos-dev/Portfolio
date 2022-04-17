@@ -473,6 +473,7 @@ h1 {
 }
 
 .tkx p{
+    text-align: center;
     width: 70%;
     min-width: 200px;
     margin: 35px auto;
